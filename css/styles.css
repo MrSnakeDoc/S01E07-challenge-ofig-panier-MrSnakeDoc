@@ -1,0 +1,214 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:700);
+body {
+  font-family: "Raleway";
+}
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-cart {
+  width: 100%;
+}
+header {
+  color: white;
+  width: 100vw;
+}
+header h1 {
+  padding: 10px;
+  background-color: #c80000;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+header h1 em {
+  font-size: 0.5em;
+  font-weight: normal;
+}
+.subtitle {
+  width: 100%;
+  background-color: #666;
+  text-align: center;
+  height: 3.2em;
+  padding-top: 1.1em;
+}
+.subtitle em {
+  font-style: italic;
+  font-size: 1em;
+}
+h2 {
+  color: white;
+}
+main {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.cart-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-bottom: 1em;
+}
+.table-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 1.5em 1.5em;
+  box-shadow: 1px 1px 10px 0px lightgray;
+}
+table {
+  width: 100%;
+}
+.titles-cart {
+  border-bottom: 1px #d9d9d9 solid;
+}
+.head-col {
+  text-align: center;
+  padding-top: 0.8em;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.articles {
+  text-align: center;
+  padding: 0.5em 2em 0.3em;
+  font-size: 1rem;
+}
+.head-col {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.delete {
+  font-size: 0.8em;
+  color: #c80000;
+  text-decoration: underline;
+}
+.totalcart {
+  text-align: center;
+  font-weight: bold;
+}
+#price {
+  font-size: 1.2em;
+  color: #c80000;
+  padding: 0.9em 0em 0.7em;
+}
+.pref {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-top: 1px solid lightgray;
+  padding-top: 0.8em;
+}
+.delivery {
+  display: flex;
+  margin-top: 2.5em;
+  border-bottom: 1px solid lightgray;
+}
+
+.delivery-box {
+  flex: 1;
+  padding-left: 0.8em;
+}
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #6e6666;
+}
+.input-group {
+  display: flex;
+  margin-top: 1.6em;
+  margin-bottom: 2px;
+  column-count: 2;
+}
+input {
+  padding: 0.8em;
+}
+
+.address-box {
+  flex: 1;
+}
+.delivery-choice,
+.options-box,
+.address-box__address,
+.address-box__info {
+  margin-bottom: 2em;
+}
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 1.5em 1.5em;
+  box-shadow: 1px 1px 10px 0px lightgray;
+  padding: 2em 1.5em 2em;
+}
+.total-box__text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.total-box__price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c80000;
+}
+.buttons-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 2em 1.5em 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.grey {
+  padding: 1em 1.5em 1em 1.5em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.red {
+  padding: 1em 1.5em 1em 1.5em;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: #c80000;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: lightgray;
+}
+footer {
+  flex: 1;
+  font-size: 0.8em;
+  font-weight: normal;
+  background-color: #666666;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100vw;
+}
+
+.soldesbutton {
+  position: fixed;
+  background-color: #c80000;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  left: -0px;
+  top: calc(50% - 156px / 2);
+}
+
+.soldesbutton p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

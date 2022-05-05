@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=100vw, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>oFig</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>oFig<em>Figurines et statuettes</em></h1>
+        </div>
+        <div class="subtitle">
+          <h2>Votre panier <em>3 produits</em></h2>
+        </div>
+      </header>
+      <!--  -->
+      <main class="main">
+        <h3 class="cart-title">Votre panier</h3>
+        <div class="container-cart">
+          <div class="table-cart">
+            <table>
+              <tbody>
+                <thead class="titles-cart" height="50px">
+                  <tr>
+                    <th class="head-col">Figurine</th>
+                    <th class="head-col">Prix unitaire</th>
+                    <th class="head-col">Quantité</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td class="articles">Cloud Stife</td>
+                  <td class="articles">59 €</td>
+                  <td class="articles">
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      max="10"
+                      value="1"
+                    />
+                    <a href="#" class="delete">Supprimer</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="articles">Tifa Lockhart</td>
+                  <td class="articles">69 €</td>
+                  <td class="articles">
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      max="10"
+                      value="1"
+                    />
+                    <a href="#" class="delete">Supprimer</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="articles">Tifa Lockhart</td>
+                  <td class="articles">69 €</td>
+                  <td class="articles">
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      max="10"
+                      value="1"
+                    />
+                    <a href="#" class="delete">Supprimer</a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="totalcart" colspan="2">Total de la commande:</td>
+                  <td class="totalcart" id="price">197€</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <h3 class="pref">Préférences de livraison</h3>
+          <div class="delivery">
+            <div class="delivery-box">
+              <div class="delivery-choice">
+                <h4>Où souhaiteriez vous être livré ?</h4>
+                <fieldset class="input-group">
+                  <label for="myaddress"
+                    ><input
+                      type="radio"
+                      id="myaddress"
+                      name="myaddress"
+                      unchecked
+                    />
+                    Mon adresse courante</label
+                  >
+
+                  <label for="otheraddress"
+                    ><input
+                      type="radio"
+                      id="otheraddress"
+                      name="otheraddress"
+                      unchecked
+                    />
+                    Autre adresse</label
+                  >
+                </fieldset>
+              </div>
+              <div class="options-box">
+                <h4>Options</h4>
+                <fieldset class="input-group">
+                  <label class="label" for="smstrack"
+                    ><input
+                      type="checkbox"
+                      id="smstrack"
+                      name="smstrack"
+                      unchecked
+                    />
+                    Suivi de livraison par sm (inclus)</label
+                  >
+
+                  <label class="label" for="refund"
+                    ><input
+                      type="checkbox"
+                      id="refund"
+                      name="refund"
+                      unchecked
+                    />
+                    Satisfait ou remboursé (+ 2 euros)</label
+                  >
+
+                  <label class="label" for="warranty"
+                    ><input
+                      type="checkbox"
+                      id="warranty"
+                      name="warranty"
+                      unchecked
+                    />
+                    Garantie 2 ans (+ 10 euros)</label
+                  >
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-box">
+              <div class="address-box__address">
+                <h4>Adresse</h4>
+                <fieldset class="input-group">
+                  <label class="label" for="street">Rue</label>
+                  <input type="text" id="street" name="street" />
+
+                  <label class="label" for="zipcode">Code Postal</label>
+                  <input type="text" id="zipcode" name="zipcode" />
+                  <label class="label" for="city">Ville</label>
+                  <input type="text" id="city" name="city" />
+                </fieldset>
+              </div>
+              <div class="address-box__info">
+                <h4>Informations complémentaires</h4>
+                <fieldset class="input-group">
+                  <label class="label" for="informations"
+                    >interphone, bâtiment, etc...</label
+                  >
+                  <textarea
+                    id="informations"
+                    name="informations"
+                    rows="3"
+                    cols="25"
+                  ></textarea>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="total-box">
+            <p class="total-box__text">Montant total à régler:</p>
+            <p class="total-box__price">197 €</p>
+          </div>
+          <div class="buttons-box">
+            <button type="button" class="grey">Continuer vos achats</button>
+            <button type="button" class="red">Valider et payer</button>
+          </div>
+        </div>
+      </main>
+      <!--  -->
+      <footer>OFig - toutes les images sont sous copyright SquareEnix</footer>
+      <div class="button">
+        <button class="soldesbutton">
+          <p>Soldes</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
